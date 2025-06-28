@@ -69,6 +69,12 @@ Meshtastic-SAME-EAS-Alerter --help
 Meshtastic-SAME-EAS-Alerter --host <TCP_HOST_HERE>
 ```
 
+### port
+- Enter the port of the host to connect to, in the form of /dev/ttyUSB0
+```
+Meshtastic-SAME-EAS-Alerter --port <PORT_HERE>
+```
+
 ### alert channel  
 - Input the channel number that alerts will be sent to  
 - By default, (if nothing is provided) alerts will be sent to channel number 0  
@@ -118,6 +124,10 @@ rtl_fm -f <FREQUENCY_IN_HZ_HERE> -s 48000 -r 48000 | Meshtastic-SAME-EAS-Alerter
 or
 ````
 rtl_fm -f <FREQUENCY_IN_HZ_HERE> -s 48000 -r 48000 | Meshtastic-SAME-EAS-Alerter --host <TCP_HOST_HERE> --alert-channel <CHANNEL_NUMBER_HERE> --test-channel <CHANNEL_NUMBER_HERE>
+````
+or
+````
+rtl_fm -f <FREQUENCY_IN_HZ_HERE> -s 48000 -r 48000 | Meshtastic-SAME-EAS-Alerter --port <PORT_HERE> --alert-channel <CHANNEL_NUMBER_HERE> --test-channel <CHANNEL_NUMBER_HERE>
 ````
 > Remember to replace the placeholder values
 
